@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str = ""
     ENCRYPTION_KEY: str = "change-me-32-byte-key-for-fernet!"
     CORS_ORIGINS: list[str] = ["http://localhost:3000"]
-    DEV_MODE: bool = True
+    DEV_MODE: bool = False
 
     class Config:
         env_file = ".env"
